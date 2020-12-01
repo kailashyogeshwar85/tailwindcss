@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Demo</title>
+  <link rel="stylesheet" href="build/tailwind.css">
+  <style>
+    body {
+      transition: width 2s, height 4s;;
+    }
+
+    .profile-wrapper {
+      margin: 0 auto;
+    }
+    .profile-pic {
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mx-auto">
+    <h1 class="text-4xl text-yellow-400 m-7">Grids</h1>
+    <div class="grid gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+      <div class="bg-indigo-500 grid-item text-4xl text-white rounded-md h-24 text-center p-6">1</div>
+      <div class="bg-indigo-500 grid-item text-4xl text-white rounded-md h-24 text-center p-6">2</div>
+      <div class="bg-indigo-500 grid-item text-4xl text-white rounded-md h-24 text-center p-6">3</div>
+      <div class="bg-indigo-500 grid-item text-4xl text-white rounded-md h-24 text-center p-6">4</div>
+    </div>
+    <h1 class="text-yellow-400 text-4xl m-7">Complex Grid</h1>
+    <div class="grid gap-4 lg-grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+      <div class="bg-indigo-500 grid-item text-white rounded-md h-24 text-center p-6">
+        <div class="grid grid-cols-12 gap-2">
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">
+            1
+          </div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">
+            2
+          </div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">
+            3
+          </div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">
+            4
+          </div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">
+            5
+          </div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">6</div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">7</div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">8</div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">9</div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">10</div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">11</div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">12</div>
+        </div>
+      </div>
+      <div class="bg-indigo-500 grid-item text-4xl text-white rounded-md h-24 text-center p-6">
+        <div class="grid grid-cols-4 gap-2">
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">
+            1
+          </div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">
+            2
+          </div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">
+            3
+          </div>
+          <div class="grid-item bg-pink-400 rounded-md lg:text-2xl sm:text-sm xs:text-xs p-2">
+            4
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="text-4xl text-yellow-400 m-7">Demo Layout</h1>
+    <div class="grid gap-4 md:grid-cols-2 sm:grid-cols-1">
+      <div class="grid grid-cols-4 transition duration-200 ease-in-out transform hover:translate-y-1 hover:scale-105">
+          <div class="profile-wrapper">
+            <div class="profile-pic" >
+                <img src="assets/avatar.png" alt="">
+            </div>
+          </div>
+          <div class="details-wrapper col-span-3">
+            <div class="user-details">
+              <p class="text-blue-300">Kailash K Yogeshwar</p>
+              <span class="">I am dev with bit of experience in development.</span>
+            </div>
+          </div>
+      </div>
+      <div class="grid grid-cols-4 transition duration-200 ease-in-out transform hover:translate-y-1 hover:scale-105">
+        <div class="profile-wrapper">
+          <div class="profile-pic">
+            <img src="assets/pihu.png" alt="">
+          </div>
+        </div>
+        <div class="details-wrapper col-span-3">
+          <div class="user-details">
+            <p class="text-blue-300">Krisha K Yogeshwar</p>
+            <span class="">I am Krisha.</span>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-4 transition duration-200 ease-in-out transform hover:translate-y-1 hover:scale-105">
+        <div class="profile-wrapper">
+          <div class="profile-pic">
+            <img src="assets/lola.png" alt="">
+          </div>
+        </div>
+        <div class="details-wrapper col-span-3">
+          <div class="user-details">
+            <p class="text-blue-300">Ravina K Yogeshwar</p>
+            <span class="">I am Ravina I like to do Yoga.</span>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-4 transition duration-200 ease-in-out transform hover:translate-y-1 hover:scale-105">
+        <div class="profile-wrapper">
+          <div class="profile-pic">
+            <img src="assets/saint.gif" alt="">
+          </div>
+        </div>
+        <div class="details-wrapper col-span-3">
+          <div class="user-details">
+            <p class="text-blue-300">Uncle Sam</p>
+            <span class="">I am Sam. I often change my appearances.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
